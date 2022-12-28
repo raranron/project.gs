@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf8">
+  <title>Currency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit&family=Lora&family=Mali&family=Mitr:wght@400;500&family=Prompt&family=Sono&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-dark bg-dark">
+    <a class=" navbar-brand" href="">Currency</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index1.html">การแปลงสกุลเงิน</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">View History</a>
+          </li>
+        </ul>
+    </div>
+  </nav>
+  <div class="a">
+    <div>
+      <h1>View History</h1>
+    </div>
+    <div>
+      <h2>Store Code :<input type="text" name="STORE_CD" id="STORE_CD" class="box1"></h2>
+    <br>
+    <h2>Product Code :<input type="text" name="PROD_CD" id="PROD_CD" class="box2"></h2>
+    <br>
+    <h2>สกุลเงิน :
+      <select name="Currency" id="Currency3" class="dropbtn">
+        <option>Currency</option>
+        <option placeholder="KHR">KHR</option>
+        <option>CNY</option>
+        <option>LAK</option>
+      </select>
+    </h2>
+  </div>
+</div>
+  <p id="Date"></p>
+  <center>
+    <button id="GetTable3" onclick="checkvalue2()" class="btn-s">Search</button>
+    <button onclick="window.location.reload()" class="btn-c">Clear</button>
+
+    <table>
+      <thead id="tr"></thead>
+      <tr></tr>
+      <tbody id="tbody2"></tbody>
+    </table>
+  </center>
+  <script src="callapi2.js"> </script>
+
+</body>
+</html>
